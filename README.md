@@ -1,6 +1,12 @@
 # Ultimate Icons
 
-A comprehensive React icon library with 1349+ high-quality SVG icons in three variants: regular, bold, and color.
+A comprehensive React icon library with 3000+ high-quality SVG icons in three variants: regular, bold, and color.
+
+## 🌐 Live Showcase
+
+**[View all icons in our interactive showcase →](https://brightkieu.github.io/ultimate-icons)**
+
+Browse, search, and copy icon names with our beautiful showcase website.
 
 ## Installation
 

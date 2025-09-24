@@ -1,19 +1,25 @@
 {
   "name": "ultimate-icons",
   "version": "1.0.0",
-  "description": "Ultimate Icons React Library",
+  "description": "A comprehensive React icon library with 3000+ high-quality SVG icons in three variants: regular, bold, and color",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "generate-icons": "node scripts/generateIcons.js",
+    "generate-showcase": "node scripts/generateShowcase.js",
+    "serve": "node scripts/serve.js",
     "prebuild": "npm run generate-icons",
-    "type-check": "tsc --noEmit"
+    "postbuild": "npm run generate-showcase",
+    "type-check": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
@@ -36,8 +42,23 @@
     "react",
     "svg",
     "components",
-    "ui"
+    "ui",
+    "design",
+    "interface",
+    "typescript",
+    "ultimate",
+    "icon-library",
+    "react-icons",
+    "svg-icons"
   ],
   "author": "Bright",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brightkieu/ultimate-icons.git"
+  },
+  "homepage": "https://brightkieu.github.io/ultimate-icons",
+  "bugs": {
+    "url": "https://github.com/brightkieu/ultimate-icons/issues"
+  }
 }
