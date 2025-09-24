@@ -1,0 +1,43 @@
+{
+  "name": "ultimate-icons",
+  "version": "1.0.0",
+  "description": "Ultimate Icons React Library",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "generate-icons": "node scripts/generateIcons.js",
+    "prebuild": "npm run generate-icons",
+    "type-check": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@types/react": "^18.2.42",
+    "@types/react-dom": "^18.2.17",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^4.6.1",
+    "rollup-plugin-dts": "^6.1.0",
+    "tslib": "^2.8.1",
+    "typescript": "^5.3.2"
+  },
+  "keywords": [
+    "icons",
+    "react",
+    "svg",
+    "components",
+    "ui"
+  ],
+  "author": "Bright",
+  "license": "MIT"
+}
